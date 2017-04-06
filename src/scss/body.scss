@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@font-face {
+  font-family: "asche";
+  src: url('assets/fonts/asche-regular-webfont.eot');
+  src: url('assets/fonts/asche-regular-webfont.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/asche-regular-webfont.ttf')  format('truetype'),
+      url('assets/fonts/asche-regular-webfont.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  background: $black;
+  color: $white;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (max-width:639px) {
+  body {
+    font-size: 14px;
+  }
+}
