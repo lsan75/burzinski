@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'bz-footer',
-  templateUrl: './footer.html'
+  templateUrl: './footer.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
-  
+
   constructor() { }
 
 }

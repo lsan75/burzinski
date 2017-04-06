@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'bz-text',
-  templateUrl: './text.html'
+  templateUrl: './text.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TextComponent {
   constructor() { }

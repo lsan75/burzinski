@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'bz-header',
-  templateUrl: './header.html'
+  templateUrl: './header.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
 
