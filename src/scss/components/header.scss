@@ -20,6 +20,10 @@
     margin: 0;
     width: 100%;
   }
+    .header__title__link {
+      color: $white;
+      text-decoration: none;
+    }
   .header__subtitle {
     color: $white;
     font-size: 1.5em;

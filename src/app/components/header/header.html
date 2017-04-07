@@ -1,6 +1,8 @@
 <header class="header" [ngStyle]="imgStyle">
   <section class="headerGroup">
-    <h1 class="header__title">{{ title }}</h1>
+    <h1 class="header__title">
+      <a class="header__title__link" [routerLink]="['/']">{{ title }}</a>
+    </h1>
     <h2 class="header__subtitle">{{ subtitle }}</h2>
   </section>
 </header>
