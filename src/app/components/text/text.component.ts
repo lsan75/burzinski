@@ -1,4 +1,5 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { IItem } from '../../store/main/main';
 
 @Component({
   selector: 'bz-text',
@@ -6,5 +7,5 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TextComponent {
-  constructor() { }
+  @Input() item: IItem;
 }

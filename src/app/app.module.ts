@@ -13,6 +13,7 @@ import { rootReducer } from './store/root.reducer';
 import { AppComponent } from './app.component';
 import { components } from './components';
 import { containers } from './containers';
+import { services } from './services';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { containers } from './containers';
     RouterModule.forRoot(routes)
   ],
   providers: [
-    DevToolsExtension, ...actions
+    DevToolsExtension,
+    ...actions,
+    ...services
   ],
   bootstrap: [AppComponent]
 })

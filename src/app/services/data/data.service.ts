@@ -1,26 +1,21 @@
 import { Injectable } from '@angular/core';
-import { IItem } from '../../store/main/main';
+import { Http } from '@angular/http';
 
 @Injectable()
 export class DataService {
 
-  public list: IItem[] = [
-    {
-      type: 'text',
-      datePub: 'Fri Apr 07 2017 00:14:27 GMT+0200',
-      text: ''
-    },
-    {
-      type: 'video',
-      datePub: '',
-      img: '',
-      title: 'Baroque Panic',
-      page: {
-        source: '',
-        description: [
-        ]
-      }
-    }
-  ];
+  constructor(
+    private http: Http
+  ) {}
+
+  public getHeader = () => {
+    return this.http.get('./api/header.json')
+      .map(res => res.json());
+  };
+
+  public getData = () => {
+    return this.http.get('./api/data.json')
+      .map(res => res.json());
+  };
 
 }

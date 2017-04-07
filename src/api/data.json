@@ -1,0 +1,40 @@
+[
+  {
+    "type": "text",
+    "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
+    "text": "Burzinski's music is shaped with lush and weird sounds coming from both Moog synths and Mellotrons. Then comes the voice, deep and warm, reminding you the dreams you might have had last night. This is Cold Wave."
+  },
+  {
+    "type": "album",
+    "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
+    "img": "./assets/img/autumn-fears.jpg",
+    "title": "Autumn Fears",
+    "page": {
+      "source": "",
+      "description": [
+      ]
+    }
+  },
+  {
+    "type": "video",
+    "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
+    "img": "./assets/img/woman.jpg",
+    "title": "Baroque Panic",
+    "page": {
+      "source": "",
+      "description": [
+      ]
+    }
+  },
+  {
+    "type": "video",
+    "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
+    "img": "./assets/img/blind-stars.jpg",
+    "title": "Blind Stars",
+    "page": {
+      "source": "",
+      "description": [
+      ]
+    }
+  }
+]

@@ -1,29 +1,23 @@
 <bz-header
-  [img]=""
-  [title]=""
-  [subtitle]=""
+  [img]="(header | async)?.img"
+  [title]="(header | async)?.title"
+  [subtitle]="(header | async)?.subtitle"
 ></bz-header>
 
 <main class="main">
 
-  <section class="main__block">
-    <bz-text></bz-text>
-  </section>
+  <section class="main__block" *ngFor="let item of data | async">
 
-  <section class="main__block">
-    <bz-item></bz-item>
-  </section>
+    <bz-text
+      *ngIf="item.type === 'text'"
+      [item]="item"
+    ></bz-text>
 
-  <section class="main__block">
-    <bz-item></bz-item>
-  </section>
+    <bz-item
+      *ngIf="item.type !== 'text'"
+      [item]="item"
+    ></bz-item>
 
-  <section class="main__block">
-    <bz-item></bz-item>
-  </section>
-
-  <section class="main__block">
-    <bz-item></bz-item>
   </section>
 
 </main>
