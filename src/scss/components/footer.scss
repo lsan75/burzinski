@@ -8,8 +8,10 @@
     .footer__content__links, .footer__content__subscribe {
       width: 50%;
     }
+      .footer__content__link {
+        text-decoration: none;
+      }
       .footer__content__social {
-        cursor: pointer;
         height: 2em;
         margin-left: 1em;
         opacity: 0.99;
