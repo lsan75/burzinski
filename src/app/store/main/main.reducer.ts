@@ -5,7 +5,7 @@ import { MAIN } from './main.actions';
 
 interface MainAction extends Action {
   header?: IHeader;
-  data?: IItem[];
+  list?: IItem[];
 }
 
 export function mainReducer(state: IMain = defaultMain, action: MainAction) {
@@ -16,7 +16,7 @@ export function mainReducer(state: IMain = defaultMain, action: MainAction) {
       return Object.assign({}, state, { header: action.header });
 
     case MAIN.DATA_FETCH:
-      return Object.assign({}, state, { data: action.data });
+      return Object.assign({}, state, { list: action.list });
 
     default:
       return state;

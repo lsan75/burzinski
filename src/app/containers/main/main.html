@@ -6,7 +6,7 @@
 
 <main class="main">
 
-  <section class="main__block" *ngFor="let item of data | async">
+  <section class="main__block" *ngFor="let item of list | async">
 
     <bz-text
       *ngIf="item.type === 'text'"

@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { select } from '@angular-redux/store';
 import { Observable } from 'rxjs/Rx';
 import { IHeader } from '../../store/main/main';
+import { getHeader } from '../../store/main/main.queries';
 
 @Component({
   selector: 'bz-contact',
   templateUrl: './contact.html'
 })
 export class ContactComponent {
-  @select(state => state.mainReducer.header) header: Observable<IHeader>;
-  constructor() { }
+  @select(getHeader) header: Observable<IHeader>;
 }

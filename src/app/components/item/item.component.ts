@@ -8,7 +8,7 @@ import { IItem } from '../../store/main/main';
 })
 export class ItemComponent implements OnChanges {
   public imgStyle;
-  @Input() item: IItem;
+  @Input() item = <IItem>null;
 
   ngOnChanges() {
     if (!this.item.img) { return; }

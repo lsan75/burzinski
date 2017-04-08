@@ -18,10 +18,10 @@ export class MainActions {
   ) {}
 
   fetchData = () => {
-    return this.data.getData().subscribe(data => {
+    return this.data.getData().subscribe(list => {
       return this.store.dispatch({
         type: MAIN.DATA_FETCH,
-        data
+        list
       });
     });
   };

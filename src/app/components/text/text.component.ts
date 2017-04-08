@@ -7,5 +7,5 @@ import { IItem } from '../../store/main/main';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TextComponent {
-  @Input() item: IItem;
+  @Input() item = <IItem>null;
 }
