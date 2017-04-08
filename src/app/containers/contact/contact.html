@@ -3,3 +3,50 @@
   [title]="(header | async)?.title"
   [subtitle]="(header | async)?.subtitle"
 ></bz-header>
+
+<main class="contact">
+
+  <form novalidate (submit)="sendMessage()" #contactForm="ngForm">
+
+    <p>
+      <input
+        type="text"
+        placeholder="Your name"
+        name="name"
+        [(ngModel)]="contact.name"
+        required
+        #name="ngModel"
+        autofocus
+      >
+    </p>
+
+    <p>
+      <input
+        type="email"
+        placeholder="Your email"
+        name="email"
+        [(ngModel)]="contact.email"
+        required
+        pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+        #email="ngModel"
+      >
+    </p>
+
+    <p>
+      <textarea
+        name="message"
+        [(ngModel)]="contact.message"
+        required
+        #message="ngModel"
+      ></textarea>
+    </p>
+
+    <p>
+      <button
+        [disabled]="!contactForm.valid"
+      >Send Message</button>
+    </p>
+
+  </form>
+
+</main>
