@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { NgRedux } from '@angular-redux/store';
 import { IAppState } from '../../store';
-import { IContact } from '../../store/contact/contact';
 import { ContactService } from '../../services/contact/contact.service';
 
 export const CONTACT = {
@@ -15,12 +14,19 @@ export class ContactActions {
     private contactService: ContactService
   ) {}
 
-  public send = (contact: IContact) => {
+  public send = contact => {
     this.contactService.send(contact).subscribe(res => {
       this.store.dispatch({
         type: CONTACT.SENT,
         sent: true
       });
+    });
+  }
+
+  public setNotSent = () => {
+    this.store.dispatch({
+      type: CONTACT.SENT,
+      sent: false
     });
   }
 }

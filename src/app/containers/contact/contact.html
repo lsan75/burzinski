@@ -6,7 +6,7 @@
 
 <main class="contact">
 
-  <form novalidate (submit)="sendMessage()" #contactForm="ngForm">
+  <form novalidate (submit)="sendMessage()" #contactForm="ngForm" *ngIf="!(sent | async)">
 
     <p>
       <input
@@ -48,5 +48,9 @@
     </p>
 
   </form>
+
+  <aside *ngIf="sent | async">
+    Thanks a lot for your message, {{ contact.name }}
+  </aside>
 
 </main>
