@@ -16,6 +16,7 @@
     <bz-item
       *ngIf="item.type !== 'text'"
       [item]="item"
+      (openMedia)="openMedia($event)"
     ></bz-item>
 
   </section>

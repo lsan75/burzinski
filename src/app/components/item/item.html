@@ -1,4 +1,9 @@
-<article class="main__block__content main__block--clickable" [ngStyle]="imgStyle">
+<article
+  class="main__block__content"
+  [ngStyle]="imgStyle"
+  [ngClass]="{'main__block--clickable': item.source}"
+  (click)="open(item)"
+>
 
   <div>
     <h3 class="main__block__content__title">{{ item.title }}</h3>

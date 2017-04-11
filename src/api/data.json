@@ -36,6 +36,12 @@
     "source": ""
   },
   {
+    "type": "video",
+    "img": "./assets/img/passing-days-video.jpg",
+    "title": "Passing Days",
+    "source": ""
+  },
+  {
     "type": "album",
     "datePub": "Tue Jan 01 2013 00:00:00 GMT+0100",
     "img": "./assets/img/passing-days.jpg",
