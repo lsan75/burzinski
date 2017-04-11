@@ -1,17 +1,18 @@
 <bz-header
   [img]="(header | async)?.img"
   [title]="(header | async)?.title"
-  [subtitle]="(header | async)?.subtitle"
+  [subtitle]="'Contact'"
 ></bz-header>
 
 <main class="contact">
 
   <form novalidate (submit)="sendMessage()" #contactForm="ngForm" *ngIf="!(sent | async)">
 
-    <p>
+    <p class="contact__p">
       <input
         type="text"
-        placeholder="Your name"
+        class="contact__input"
+        placeholder="Your name *"
         name="name"
         [(ngModel)]="contact.name"
         required
@@ -20,10 +21,11 @@
       >
     </p>
 
-    <p>
+    <p class="contact__p">
       <input
         type="email"
-        placeholder="Your email"
+        class="contact__input"
+        placeholder="Your email *"
         name="email"
         [(ngModel)]="contact.email"
         required
@@ -32,17 +34,31 @@
       >
     </p>
 
-    <p>
+    <p class="contact__p">
+      <input
+        type="text"
+        class="contact__input"
+        placeholder="Subject *"
+        name="subject"
+        [(ngModel)]="contact.subject"
+        required
+        #subject="ngModel"
+      >
+    </p>
+
+    <p class="contact__p">
       <textarea
         name="message"
+        class="contact__textarea"
         [(ngModel)]="contact.message"
         required
         #message="ngModel"
       ></textarea>
     </p>
 
-    <p>
+    <p class="contact__p">
       <button
+        class="contact__button"
         [disabled]="!contactForm.valid"
       >Send Message</button>
     </p>

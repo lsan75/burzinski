@@ -1,3 +1,5 @@
+$font: "Abel", sans-serif;
+
 @import url("https://fonts.googleapis.com/css?family=Abel");
 @font-face {
   font-family: "asche";
@@ -19,7 +21,7 @@ body {
   background: $black;
   color: $white;
   font-size: 16px;
-  font-family: "Abel", sans-serif;
+  font-family: $font;
   min-height: 100%;
   -webkit-overflow-scrolling: touch;
 }

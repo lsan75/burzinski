@@ -1,6 +1,6 @@
 export interface IItem {
   type: string;
-  datePub: string;
+  datePub?: string;
   img?: string;
   title?: string;
   text?: string;

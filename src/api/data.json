@@ -1,45 +1,71 @@
 [
   {
     "type": "text",
-    "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
     "text": "Burzinski's music is shaped with lush and weird sounds coming from both Moog synths and Mellotrons. Then comes the voice, deep and warm, reminding you the dreams you might have had last night. This is Cold Wave."
   },
   {
     "type": "album",
-    "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
+    "datePub": "Fri Jun 09 2017 00:00:00 GMT+0200",
     "img": "./assets/img/autumn-fears.jpg",
     "title": "Autumn Fears",
-    "page": {
-      "source": "",
-      "description": [
-      ]
-    }
+    "source": ""
   },
   {
     "type": "video",
-    "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
-    "img": "./assets/img/woman.jpg",
+    "img": "./assets/img/baroque-panic.jpg",
     "title": "Baroque Panic",
-    "page": {
-      "source": "",
-      "description": [
-      ]
-    }
+    "source": ""
   },
   {
     "type": "video",
-    "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
     "img": "./assets/img/blind-stars.jpg",
     "title": "Blind Stars",
-    "page": {
-      "source": "",
-      "description": [
-      ]
-    }
+    "source": ""
+  },
+  {
+    "type": "video",
+    "img": "./assets/img/paralysed-video.jpg",
+    "title": "Paralysed",
+    "source": ""
+  },
+  {
+    "type": "album",
+    "datePub": "Wed Apr 29 2015 00:00:00 GMT+0200",
+    "img": "./assets/img/paralysed.jpg",
+    "title": "Paralysed",
+    "source": ""
+  },
+  {
+    "type": "album",
+    "datePub": "Tue Jan 01 2013 00:00:00 GMT+0100",
+    "img": "./assets/img/passing-days.jpg",
+    "title": "Passing Days",
+    "source": ""
+  },
+  {
+    "type": "album",
+    "datePub": "Mon Nov 15 2010 00:00:00 GMT+0100",
+    "img": "./assets/img/ghostly-female-faces.jpg",
+    "title": "Ghostly Female Faces",
+    "source": ""
+  },
+  {
+    "type": "album",
+    "datePub": "Mon Jan 18 2010 00:00:00 GMT+0100",
+    "img": "./assets/img/untimely-tales.jpg",
+    "title": "Untimely Tales",
+    "source": ""
+  },
+  {
+    "type": "album",
+    "datePub": "Mon Apr 06 2009 00:00:00 GMT+0200",
+    "img": "./assets/img/so-many-days.jpg",
+    "title": "So Many Days",
+    "source": ""
   },
   {
     "type": "text",
     "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
-    "text": "Inspired by Lou Reed, David Bowie, John Cale, Thom Yorke, Jim Reid, Robert Smith, Vincent Gallo, Blixa Bargeld, Morrissey, Mark Hollis, Ian Curtis, Nick Cave..."
+    "text": "Inspired by Lou Reed, Chan Marshall, David Bowie, John Cale, Thom Yorke, Nico, Jim Reid, Robert Smith, Lisa Germano, Vincent Gallo, Blixa Bargeld, Morrissey, Mark Hollis, Ian Curtis, Nick Cave..."
   }
 ]

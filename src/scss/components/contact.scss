@@ -1,0 +1,58 @@
+.contact {
+  padding: 3em 25% 0;
+}
+  .contact__p {
+    margin: 0 0 3em;
+    text-align: center;
+    width: 100%;
+  }
+    .contact__input, .contact__textarea {
+      background: none;
+      border-color: $white;
+      border-style: solid;
+      color: $white;
+      font-family: $font;
+      font-size: 1em;
+      outline: none;
+      width: 100%;
+    }
+      .contact__input.ng-touched.ng-invalid,
+      .contact__textarea.ng-touched.ng-invalid {
+        border-color: $red;
+        transition: border-color ease-in 300ms;
+      }
+    .contact__input {
+      border-width: 0 0 1px;
+      padding: 0 1em 0.5em;
+    }
+    .contact__textarea {
+      border-width: 1px;
+      height: 10em;
+      margin-top: 1em;
+      padding: 1em;
+    }
+    .contact__button {
+      background: none;
+      border: 1px solid $white;
+      color: $white;
+      cursor: pointer;
+      font-family: $font;
+      font-size: 1.3em;
+      padding: 0.5em 3em;
+    }
+    .contact__button[disabled] {
+      cursor: default;
+      opacity: 0.2;
+    }
+
+
+@media screen and (max-width:639px) {
+  .contact {
+    padding: 2em 2em 0;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 960px) {
+  .contact {
+    padding: 3em 15% 0;
+  }
+}

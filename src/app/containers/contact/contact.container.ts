@@ -18,6 +18,7 @@ export class ContactComponent implements OnDestroy {
   public contact = {
     name: null,
     email: null,
+    subject: null,
     message: null
   };
 

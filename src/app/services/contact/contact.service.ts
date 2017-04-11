@@ -14,7 +14,7 @@ export class ContactService {
     const options = new RequestOptions({ headers: headers });
     const body = new URLSearchParams();
     body.set('email', contact.email);
-    body.set('subject', 'from burzinski website');
+    body.set('subject', '[from burzinski site] ' + contact.subject);
     body.set('message', contact.message);
     body.set('name', contact.name);
 
