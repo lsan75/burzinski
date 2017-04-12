@@ -14,19 +14,19 @@
     "type": "video",
     "img": "./assets/img/baroque-panic.jpg",
     "title": "Baroque Panic",
-    "source": ""
+    "source": "https://www.youtube.com/embed/G5B6rmPecCE"
   },
   {
     "type": "video",
     "img": "./assets/img/blind-stars.jpg",
     "title": "Blind Stars",
-    "source": ""
+    "source": "https://www.youtube.com/embed/0mt7mPxcPZ0"
   },
   {
     "type": "video",
     "img": "./assets/img/paralysed-video.jpg",
     "title": "Paralysed",
-    "source": ""
+    "source": "https://www.youtube.com/embed/4tAnNmMIl7A"
   },
   {
     "type": "album",
@@ -39,7 +39,7 @@
     "type": "video",
     "img": "./assets/img/passing-days-video.jpg",
     "title": "Passing Days",
-    "source": ""
+    "source": "https://www.youtube.com/embed/pYRh6kyT0U4"
   },
   {
     "type": "album",
@@ -47,6 +47,12 @@
     "img": "./assets/img/passing-days.jpg",
     "title": "Passing Days",
     "source": ""
+  },
+  {
+    "type": "video",
+    "img": "./assets/img/a-strange-day.jpg",
+    "title": "A Strange Day",
+    "source": "https://www.youtube.com/embed/WliLDN1J4RA"
   },
   {
     "type": "album",

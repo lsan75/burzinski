@@ -1,0 +1,12 @@
+<aside class="media" *ngIf="opened">
+
+  <a class="media__close" (click)="close()">
+    <img src="assets/svg/close-circle.svg">
+  </a>
+
+  <bz-video
+    *ngIf="item.type === 'video'"
+    [source]="item.source"
+  ></bz-video>
+
+</aside>

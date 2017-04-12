@@ -22,3 +22,9 @@
   </section>
 
 </main>
+
+<bz-media
+  [opened]="opened | async"
+  [item]="selectedItem | async"
+  (closeMedia)="closeMedia()"
+></bz-media>
