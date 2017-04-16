@@ -9,4 +9,11 @@
     [source]="item.source"
   ></bz-video>
 
+  <bz-bandcamp
+    *ngIf="item.type === 'album'"
+    [source]="item.source"
+    [target]="item.target"
+    [title]="item.title"
+  ></bz-bandcamp>
+
 </aside>

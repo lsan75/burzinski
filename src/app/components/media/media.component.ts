@@ -1,10 +1,11 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { IItem } from '../../store/main/main';
 
 @Component({
   selector: 'bz-media',
   templateUrl: './media.html',
-  styleUrls: ['./media.less']
+  styleUrls: ['./media.less'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MediaComponent {
 

@@ -33,7 +33,8 @@
     "datePub": "Wed Apr 29 2015 00:00:00 GMT+0200",
     "img": "./assets/img/paralysed.jpg",
     "title": "Paralysed",
-    "source": ""
+    "source": "1181476333",
+    "target": "http://burzinski.bandcamp.com/album/paralysed"
   },
   {
     "type": "video",
@@ -78,6 +79,6 @@
   {
     "type": "text",
     "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
-    "text": "Inspired by Lou Reed, Chan Marshall, David Bowie, John Cale, Thom Yorke, Nico, Jim Reid, Robert Smith, Lisa Germano, Vincent Gallo, Blixa Bargeld, Morrissey, Mark Hollis, Ian Curtis, Nick Cave..."
+    "text": "Inspired by Lou Reed, Chan Marshall, David Bowie, John Cale, Thom Yorke, Dominique A, Nico, Jim Reid, Robert Smith, Lisa Germano, Vincent Gallo, Blixa Bargeld, Morrissey, Mark Hollis, Ian Curtis, Nick Cave..."
   }
 ]

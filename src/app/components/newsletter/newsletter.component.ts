@@ -5,8 +5,4 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   templateUrl: './newsletter.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NewsletterComponent {
-
-  constructor() { }
-
-}
+export class NewsletterComponent {}
