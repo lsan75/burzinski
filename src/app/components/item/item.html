@@ -10,7 +10,12 @@
     <h4 class="main__block__content__subtitle" *ngIf="item.datePub">Out {{ item.datePub | date }}</h4>
   </div>
 
-  <img *ngIf="item.type === 'album'" src="assets/svg/album.svg" class="main__block__content__icon">
-  <img *ngIf="item.type === 'video'" src="assets/svg/film.svg" class="main__block__content__icon">
+  <img
+    *ngIf="item.type === 'album' || item.type === 'track'"
+    src="assets/svg/album.svg" class="main__block__content__icon">
+
+  <img
+    *ngIf="item.type === 'video'"
+    src="assets/svg/film.svg" class="main__block__content__icon">
 
 </article>

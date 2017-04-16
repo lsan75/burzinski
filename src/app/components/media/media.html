@@ -10,10 +10,11 @@
   ></bz-video>
 
   <bz-bandcamp
-    *ngIf="item.type === 'album'"
+    *ngIf="item.type === 'album' || item.type === 'track'"
     [source]="item.source"
     [target]="item.target"
     [title]="item.title"
+    [type]="item.type"
   ></bz-bandcamp>
 
 </aside>

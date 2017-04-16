@@ -43,11 +43,12 @@
     "source": "https://www.youtube.com/embed/pYRh6kyT0U4"
   },
   {
-    "type": "album",
+    "type": "track",
     "datePub": "Tue Jan 01 2013 00:00:00 GMT+0100",
     "img": "./assets/img/passing-days.jpg",
     "title": "Passing Days",
-    "source": ""
+    "source": "319991144",
+    "target": "http://burzinski.bandcamp.com/track/passing-days"
   },
   {
     "type": "video",
@@ -60,21 +61,24 @@
     "datePub": "Mon Nov 15 2010 00:00:00 GMT+0100",
     "img": "./assets/img/ghostly-female-faces.jpg",
     "title": "Ghostly Female Faces",
-    "source": ""
+    "source": "3233773532",
+    "target": "http://burzinski.bandcamp.com/album/ghostly-female-faces-ep"
   },
   {
     "type": "album",
     "datePub": "Mon Jan 18 2010 00:00:00 GMT+0100",
     "img": "./assets/img/untimely-tales.jpg",
     "title": "Untimely Tales",
-    "source": ""
+    "source": "1640359820",
+    "target": "http://burzinski.bandcamp.com/album/untimely-tales"
   },
   {
-    "type": "album",
+    "type": "track",
     "datePub": "Mon Apr 06 2009 00:00:00 GMT+0200",
     "img": "./assets/img/so-many-days.jpg",
     "title": "So Many Days",
-    "source": ""
+    "source": "1404522304",
+    "target": "http://burzinski.bandcamp.com/track/so-many-days"
   },
   {
     "type": "text",
