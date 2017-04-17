@@ -1,8 +1,10 @@
 .contact {
-  padding: 3em 25% 0;
+  display: block;
+  padding: 3em 0 0;
 }
   .contact__p {
-    margin: 0 0 3em;
+    margin: 0;
+    padding: 0 25% 3em;
     text-align: center;
     width: 100%;
   }

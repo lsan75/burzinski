@@ -31,12 +31,16 @@
     .main__block__content:nth-child(3n) {
       border-width: 0 0 1px 0;
     }
+    .main__block__content__sub {
+      margin: 0 auto;
+    }
     .main__block--clickable {
       cursor: pointer;
     }
       .main__block__content__text {
         line-height: 1.5em;
         text-align: justify;
+        width: 100%; // ie10 fix
       }
       .main__block__content__title {
         background: $black;
