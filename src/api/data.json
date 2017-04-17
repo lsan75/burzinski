@@ -65,6 +65,12 @@
     "target": "http://burzinski.bandcamp.com/album/ghostly-female-faces-ep"
   },
   {
+    "type": "video",
+    "img": "./assets/img/here.jpg",
+    "title": "Here",
+    "source": "https://www.youtube.com/embed/shTgiABv6nY"
+  },
+  {
     "type": "album",
     "datePub": "Mon Jan 18 2010 00:00:00 GMT+0100",
     "img": "./assets/img/untimely-tales.jpg",
@@ -83,6 +89,6 @@
   {
     "type": "text",
     "datePub": "Fri Apr 07 2017 00:14:27 GMT+0200",
-    "text": "Inspired by Lou Reed, Chan Marshall, David Bowie, John Cale, Thom Yorke, Dominique A, Nico, Jim Reid, Robert Smith, Lisa Germano, Vincent Gallo, Blixa Bargeld, Morrissey, Mark Hollis, Ian Curtis, Nick Cave..."
+    "text": "Inspired by Lou Reed, Chan Marshall, David Bowie, John Cale, Thom Yorke, Nico, Jim Reid, Robert Smith, Lisa Germano, Vincent Gallo, Blixa Bargeld, Morrissey, Mark Hollis, Ian Curtis, Nick Cave..."
   }
 ]

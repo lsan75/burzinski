@@ -14,7 +14,7 @@ export class BandcampComponent implements OnInit {
   @Input() type;
   src;
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(public sanitizer: DomSanitizer) {}
 
   ngOnInit() {
     this.src = this.sanitizer.bypassSecurityTrustResourceUrl(

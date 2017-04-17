@@ -65,8 +65,12 @@
 
   </form>
 
-  <aside *ngIf="sent | async">
+  <aside *ngIf="sent | async" class="contact__response">
     Thanks a lot for your message, {{ contact.name }}
+
+    <a [routerLink]="['/home']" class="contact__response__link">
+      Back Home
+    </a>
   </aside>
 
 </main>

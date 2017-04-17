@@ -45,7 +45,16 @@
       opacity: 0.2;
     }
 
-
+    .contact__response {
+      padding: 6em 1em 10em;
+      text-align: center;
+    }
+      .contact__response__link {
+        padding: 1em 0 0;
+        color: $white;
+        display: block;
+        text-decoration: underline;
+      }
 @media screen and (max-width:639px) {
   .contact {
     padding: 2em 2em 0;
