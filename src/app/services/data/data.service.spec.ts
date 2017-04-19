@@ -27,7 +27,6 @@ describe('DataService', () => {
     [ MockBackend, DataService ],
     ( backend: MockBackend, s: DataService ) => {
       const urls = [
-        './api/header.json',
         './api/data.json'
       ];
 
@@ -41,9 +40,6 @@ describe('DataService', () => {
         }));
         urls.push(req.url);
 
-        if (req.method === RequestMethod.Get && req.url === './api/header.json') {
-          connection.mockRespond(headerResponse);
-        }
         if (req.method === RequestMethod.Get && req.url === './api/data.json') {
           connection.mockRespond(dataResponse);
         }
@@ -51,9 +47,6 @@ describe('DataService', () => {
 
       s.getData().subscribe(res => {
         expect(res).toEqual({data: 'data'});
-      });
-      s.getHeader().subscribe(res => {
-        expect(res).toEqual({header: 'header'});
       });
 
     })

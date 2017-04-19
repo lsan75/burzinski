@@ -6,8 +6,7 @@ import { Observable } from 'rxjs/Rx';
 import { DataService } from '../../services/data/data.service';
 
 export const MAIN = {
-  DATA_FETCH: 'MAIN_DATA_FETCH',
-  HEADER_FETCH: 'MAIN_HEADER_FETCH'
+  DATA_FETCH: 'MAIN_DATA_FETCH'
 };
 
 @Injectable()
@@ -24,14 +23,6 @@ export class MainActions {
         list
       });
     });
-  };
+  }
 
-  fetchHeader = () => {
-    return this.data.getHeader().subscribe(header => {
-      this.store.dispatch({
-        type: MAIN.HEADER_FETCH,
-        header
-      });
-    });
-  };
 }

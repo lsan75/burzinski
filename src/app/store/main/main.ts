@@ -7,22 +7,10 @@ export interface IItem {
   source?: string;
 }
 
-export interface IHeader {
-  img: string;
-  title: string;
-  subtitle: string;
-}
-
 export interface IMain {
   list: IItem[];
-  header: IHeader;
 }
 
 export const defaultMain = {
-  list: [],
-  header: {
-    img: null,
-    title: null,
-    subtitle: null
-  }
+  list: []
 };

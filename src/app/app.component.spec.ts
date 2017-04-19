@@ -8,7 +8,7 @@ import { MainActions } from './store/main/main.actions';
 
 describe('AppComponent', () => {
 
-  const spyActions = jasmine.createSpyObj('spyActions', ['fetchData', 'fetchHeader']);
+  const spyActions = jasmine.createSpyObj('spyActions', ['fetchData']);
   let fixture, comp;
 
   beforeEach(() => {
@@ -36,8 +36,6 @@ describe('AppComponent', () => {
 
   it('should get datas', () => {
     fixture.detectChanges();
-
     expect(spyActions.fetchData).toHaveBeenCalled();
-    expect(spyActions.fetchHeader).toHaveBeenCalled();
   });
 });

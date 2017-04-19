@@ -10,12 +10,28 @@
     <h4 class="main__block__content__subtitle" *ngIf="item.datePub">Out {{ item.datePub | date }}</h4>
   </div>
 
-  <img
+  <svg
     *ngIf="item.type === 'album' || item.type === 'track'"
-    src="assets/svg/album.svg" class="main__block__content__icon">
+    class="main__block__content__icon"
+    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="32" viewBox="0 0 29 32">
+    <defs><style>.cls-1{fill:#ffffff;}</style></defs>
+    <g id="icomoon-ignore">
+    </g>
+    <path class="cls-1" d="M0 3.2v25.6h28.8v-25.6h-28.8zM1.067 4.267h2.667v23.467h-2.667v-23.467zM27.733 27.733h-22.933v-23.467h22.933v23.467z" fill="#000000"></path>
+    <path class="cls-1" d="M16.533 26.133c5.6 0 10.133-4.533 10.133-10.133s-4.533-10.133-10.133-10.133c-5.6 0-10.133 4.533-10.133 10.133s4.533 10.133 10.133 10.133zM16.533 6.933c5.013 0 9.067 4.053 9.067 9.067s-4.053 9.067-9.067 9.067c-5.013 0-9.067-4.053-9.067-9.067s4.053-9.067 9.067-9.067z" fill="#000000"></path>
+    <path class="cls-1" d="M16.533 19.2c1.76 0 3.2-1.44 3.2-3.2s-1.44-3.2-3.2-3.2c-1.76 0-3.2 1.44-3.2 3.2s1.44 3.2 3.2 3.2zM16.533 13.867c1.173 0 2.133 0.96 2.133 2.133s-0.96 2.133-2.133 2.133-2.133-0.96-2.133-2.133c0-1.173 0.96-2.133 2.133-2.133z" fill="#000000"></path>
+    <path class="cls-1" d="M17.067 16c0 0.295-0.239 0.533-0.533 0.533s-0.533-0.239-0.533-0.533c0-0.295 0.239-0.533 0.533-0.533s0.533 0.239 0.533 0.533z" fill="#000000"></path>
+  </svg>
 
-  <img
+  <svg
     *ngIf="item.type === 'video'"
-    src="assets/svg/film.svg" class="main__block__content__icon">
+    class="main__block__content__icon"
+    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="32" viewBox="0 0 26 32">
+    <defs><style>.cls-1{fill:#ffffff;}</style></defs>
+    <g id="icomoon-ignore">
+    </g>
+    <path class="cls-1" d="M0 4.985v22.029h26.226v-22.029h-26.226zM4.196 25.966h-3.147v-4.196h3.147v4.196zM4.196 20.721h-3.147v-4.196h3.147v4.196zM4.196 15.476h-3.147v-4.196h3.147v4.196zM4.196 10.231h-3.147v-4.196h3.147v4.196zM20.98 11.979v13.987h-15.735v-19.931h15.735v5.944zM25.177 25.966h-3.147v-4.196h3.147v4.196zM25.177 20.721h-3.147v-4.196h3.147v4.196zM25.177 15.476h-3.147v-4.196h3.147v4.196zM25.177 10.231h-3.147v-4.196h3.147v4.196z" fill="#000000"></path>
+    <path class="cls-1" d="M10.49 11.76v8.479l7.343-4.239-7.343-4.24zM11.539 13.577l4.196 2.423-4.196 2.423v-4.845z" fill="#000000"></path>
+  </svg>
 
 </article>

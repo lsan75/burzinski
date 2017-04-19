@@ -1,10 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
 import { select } from '@angular-redux/store';
 import { Observable } from 'rxjs/Rx';
-import { IHeader } from '../../store/main/main';
 import { IContact, defaultContact } from '../../store/contact/contact';
 import { ContactActions } from '../../store/contact/contact.actions';
-import { getHeader } from '../../store/main/main.queries';
 import { isSent } from '../../store/contact/contact.queries';
 
 @Component({
@@ -12,7 +10,6 @@ import { isSent } from '../../store/contact/contact.queries';
   templateUrl: './contact.html'
 })
 export class ContactComponent implements OnDestroy {
-  @select(getHeader) header: Observable<IHeader>;
   @select(isSent) sent: Observable<boolean>;
 
   public contact = {

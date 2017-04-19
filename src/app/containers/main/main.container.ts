@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { select } from '@angular-redux/store';
-import { IHeader, IItem } from '../../store/main/main';
-import { getHeader, getData } from '../../store/main/main.queries';
+import { IItem } from '../../store/main/main';
+import { getData } from '../../store/main/main.queries';
 import { getMediaOpened, getMediaItem} from '../../store/media/media.queries';
 import { MediaActions } from '../../store/media/media.actions';
 
@@ -11,7 +11,6 @@ import { MediaActions } from '../../store/media/media.actions';
   templateUrl: './main.html'
 })
 export class MainComponent {
-  @select(getHeader) header: Observable<IHeader>;
   @select(getData) list: Observable<IItem[]>;
 
   @select(getMediaOpened) opened: Observable<boolean>;

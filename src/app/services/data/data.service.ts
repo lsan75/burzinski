@@ -8,11 +8,6 @@ export class DataService {
     private http: Http
   ) {}
 
-  public getHeader = () => {
-    return this.http.get('./api/header.json')
-      .map(res => res.json());
-  }
-
   public getData = () => {
     return this.http.get('./api/data.json')
       .map(res => res.json());

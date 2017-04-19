@@ -10,11 +10,10 @@ import { Observable } from 'rxjs/Rx';
 
 describe('MainActions', () => {
   let actions;
-  const spyDataService = jasmine.createSpyObj('spyDataService', ['getData', 'getHeader']);
+  const spyDataService = jasmine.createSpyObj('spyDataService', ['getData']);
   const spyStore = jasmine.createSpyObj('spyStore', ['dispatch']);
 
   spyDataService.getData.and.returnValue(Observable.of(['data']));
-  spyDataService.getHeader.and.returnValue(Observable.of(['header']));
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -43,16 +42,6 @@ describe('MainActions', () => {
     expect(spyStore.dispatch).toHaveBeenCalledWith({
       type: MAIN.DATA_FETCH,
       list: ['data']
-    });
-  });
-
-  it('should fetch header', () => {
-    actions.fetchHeader();
-
-    expect(spyDataService.getHeader).toHaveBeenCalled();
-    expect(spyStore.dispatch).toHaveBeenCalledWith({
-      type: MAIN.HEADER_FETCH,
-      header: ['header']
     });
   });
 
