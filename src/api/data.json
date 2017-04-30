@@ -12,6 +12,12 @@
   },
   {
     "type": "video",
+    "img": "./assets/img/autumn-fears-video.jpg",
+    "title": "Autumn Fears",
+    "source": "https://www.youtube.com/embed/ZxLEcDjQ7ds"
+  },
+  {
+    "type": "video",
     "img": "./assets/img/baroque-panic.jpg",
     "title": "Baroque Panic",
     "source": "https://www.youtube.com/embed/G5B6rmPecCE"
