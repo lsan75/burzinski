@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class DataService {
 
   constructor(
-    private http: Http
+    private http: HttpClient
   ) {}
 
   public getData = () => {
-    return this.http.get('./api/data.json')
-      .map(res => res.json());
+    return this.http.get('./api/data.json');
   }
 
 }

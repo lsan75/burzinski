@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router';
 
-import { ContactComponent } from './containers/contact/contact.container';
 import { MainComponent } from './containers/main/main.container';
 
 export const routes: Routes = [
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact', loadChildren: './containers/contact/contact.module#ContactModule' },
   { path: '', component: MainComponent },
   { path: '**', redirectTo: '/' }
 ];

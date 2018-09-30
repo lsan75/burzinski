@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
+
+import { ContactModule } from './containers/contact/contact.module';
+import { LibraryModule } from './components/library.module';
 
 import { environment } from '../environments/environment';
 import { DevToolsExtension, NgRedux, NgReduxModule } from '@angular-redux/store';
@@ -11,29 +14,30 @@ import { IAppState, actions, defaultState } from './store';
 import { rootReducer } from './store/root.reducer';
 
 import { AppComponent } from './app.component';
-import { components } from './components';
 import { containers } from './containers';
 import { services } from './services';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ...components,
     ...containers
   ],
   imports: [
     BrowserModule,
+    ContactModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
+    LibraryModule,
     NgReduxModule,
     RouterModule.forRoot(routes)
   ],
+  exports: [ LibraryModule ],
   providers: [
     DevToolsExtension,
     ...actions,
     ...services
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule {
 
