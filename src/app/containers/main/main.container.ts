@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { select } from '@angular-redux/store';
 import { IItem } from '../../store/main/main';
 import { getData } from '../../store/main/main.queries';

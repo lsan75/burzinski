@@ -1,4 +1,4 @@
-import { Action, combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 import { IAppState } from './';
 
 import { contactReducer } from './contact/contact.reducer';

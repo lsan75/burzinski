@@ -1,6 +1,6 @@
 import { Component, OnDestroy } from '@angular/core';
 import { select } from '@angular-redux/store';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs';
 import { ContactActions } from '../../store/contact/contact.actions';
 import { isSent } from '../../store/contact/contact.queries';
 

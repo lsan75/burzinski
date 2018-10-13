@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { NgRedux } from '@angular-redux/store';
 import { IAppState } from '../../store';
-import { Observable } from 'rxjs/Rx';
 
 import { DataService } from '../../services/data/data.service';
 
