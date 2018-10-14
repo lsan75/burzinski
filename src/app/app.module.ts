@@ -16,6 +16,7 @@ import { rootReducer } from './store/root.reducer';
 import { AppComponent } from './app.component';
 import { containers } from './containers';
 import { services } from './services';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { services } from './services';
     HttpClientModule,
     LibraryModule,
     NgReduxModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   exports: [ LibraryModule ],
   providers: [
