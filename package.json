@@ -12,7 +12,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-redux/store": "^6.1.0",
+    "@angular-redux/store": "^9.0.0",
     "@angular/common": "^6.1.9",
     "@angular/compiler": "^6.1.9",
     "@angular/core": "^6.1.9",
@@ -22,8 +22,7 @@
     "@angular/platform-browser-dynamic": "^6.1.9",
     "@angular/router": "^6.1.9",
     "core-js": "^2.4.1",
-    "intl": "^1.2.5",
-    "redux": "^3.6.0",
+    "redux": "^4.0.0",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3",
     "zone.js": "^0.8.4"
