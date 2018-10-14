@@ -1,24 +1,33 @@
-import { Component, Input, OnChanges, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { ImageLoaderService } from 'app/services/image-loader/image-loarder.service';
 
 @Component({
   selector: 'bz-header',
-  templateUrl: './header.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  templateUrl: './header.html'
 })
-export class HeaderComponent implements OnChanges {
+export class HeaderComponent implements OnInit, OnDestroy {
 
   @Input() img: string;
   @Input() title: string;
   @Input() subtitle: string;
 
   public imgStyle;
+  private unload;
 
-  constructor() { }
+  constructor(private imgLoader: ImageLoaderService) {}
 
-  ngOnChanges() {
+  ngOnInit() {
     if (!this.img) { return; }
-    this.imgStyle = {
-      'background-image': `url(${this.img})`
-    };
+
+    this.unload = this.imgLoader.load(this.img).subscribe((response: boolean) => {
+      if (!response) return;
+      this.imgStyle = {
+        'background-image': `url(${this.img})`
+      };
+    });
+  }
+
+  ngOnDestroy() {
+    this.unload.unsubscribe();
   }
 }

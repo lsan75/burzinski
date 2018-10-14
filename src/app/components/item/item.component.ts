@@ -1,23 +1,35 @@
 import {
-  Component, ChangeDetectionStrategy, EventEmitter, Input, Output, OnChanges
+  Component, EventEmitter, Input, Output, OnInit, OnDestroy
 } from '@angular/core';
 import { IItem } from '../../store/main/main';
+import { ImageLoaderService } from 'app/services/image-loader/image-loarder.service';
 
 @Component({
   selector: 'bz-item',
-  templateUrl: './item.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  templateUrl: './item.html'
 })
-export class ItemComponent implements OnChanges {
+export class ItemComponent implements OnInit, OnDestroy {
   public imgStyle;
+  private unload;
+
   @Input() item = <IItem>null;
   @Output() openMedia = new EventEmitter();
 
-  ngOnChanges() {
+  constructor(private imgLoader: ImageLoaderService) {}
+
+  ngOnInit() {
     if (!this.item.img) { return; }
-    this.imgStyle = {
-      'background-image': `url(${this.item.img})`
-    };
+
+    this.unload = this.imgLoader.load(this.item.img).subscribe((response: boolean) => {
+      if (!response) return;
+      this.imgStyle = {
+        'background-image': `url(${this.item.img})`
+      };
+    })
+  }
+
+  ngOnDestroy() {
+    this.unload.unsubscribe();
   }
 
   open = (item: IItem) => {
